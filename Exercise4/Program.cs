@@ -78,7 +78,9 @@ namespace Exercise4
                 char ch = Convert.ToChar(input == "" ? "0" : input);
                 switch (ch)
                 {
-
+                    case '1':
+                        s.push();
+                        break;
                 }
             }
         }
