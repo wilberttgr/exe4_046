@@ -32,6 +32,21 @@ namespace Exercise4
                 wilbert[top] = Console.ReadLine();
             }
         }
+
+        public int pop()//mengambil dan menghapus elemen dari stack
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack Underflow");
+                return -1;
+            }
+            else
+            {
+                Console.WriteLine("Poped element is: " + wilbert[top]);
+                top--;
+                return top;
+            }
+        }
     }
     internal class Program
     {
