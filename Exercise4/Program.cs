@@ -17,6 +17,21 @@ namespace Exercise4
             top = -1;
             max = wilbert.Length;
         }
+
+        public void push() //memasukkan elemen ke dalam stack
+        {
+            if (top == max - 1)
+            {
+                Console.WriteLine("Stack Overflow");
+                return;
+            }
+            else
+            {
+                top++;
+                Console.WriteLine("Masukan Element: ");
+                wilbert[top] = Console.ReadLine();
+            }
+        }
     }
     internal class Program
     {
