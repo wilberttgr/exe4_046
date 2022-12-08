@@ -11,6 +11,12 @@ namespace Exercise4
         private String[] wilbert = new string[65];
         private int top;
         private int max;
+        
+        public Stack()
+        {
+            top = -1;
+            max = wilbert.Length;
+        }
     }
     internal class Program
     {
